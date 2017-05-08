@@ -1,14 +1,16 @@
-h1 Artists
-%listing collection=model name='artists'
-
-
-.artists
-  .artists__title
-table.artists
+table.artists.listing
   thead
     tr
       th Name
+      th
+        = link-to 'New' 'artists.new'
   each model as |artist|
-
+    tr
+      td
+        = artist.name
+      td
+        nav
+          = link-to 'Edit' 'artists.edit' artist.id
+          = link-to 'Delete' action='delete' artist.id
 
 = outlet
