@@ -1,0 +1,12 @@
+header
+  .top-bar__app-title
+    h1 Wax Poetic Admin
+  .top-bar__navigation
+    nav
+      = link-to 'Articles' 'articles'
+      = link-to 'Artists' 'artists'
+      = link-to 'Releases' 'releases'
+      = link-to 'Tracks' 'tracks'
+      = link-to 'Events' 'events'
+main
+  = outlet
