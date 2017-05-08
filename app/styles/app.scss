@@ -1,5 +1,14 @@
 @import 'bourbon';
 @import 'neat';
-@import 'base/base';
+
+@import 'settings/variables';
+
+@import "base/buttons";
+@import "base/forms";
+@import "base/layout";
+@import "base/lists";
+@import "base/media";
+@import "base/tables";
+@import "base/typography";
 
 @import 'components/top-bar';

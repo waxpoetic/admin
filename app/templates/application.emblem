@@ -1,6 +1,7 @@
-header
-  .top-bar__app-title
-    h1 Wax Poetic Admin
+header.top-bar
+  .top-bar__logo
+    = link-to 'index'
+      img src="logo.jpg"
   .top-bar__navigation
     nav
       = link-to 'Articles' 'articles'
