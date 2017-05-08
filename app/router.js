@@ -18,6 +18,7 @@ Router.map(function() {
   this.route('releases');
   this.route('tracks');
   this.route('events');
+  this.route('login');
 });
 
 export default Router;

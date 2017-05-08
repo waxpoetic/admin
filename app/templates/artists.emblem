@@ -1,1 +1,14 @@
+h1 Artists
+%listing collection=model name='artists'
+
+
+.artists
+  .artists__title
+table.artists
+  thead
+    tr
+      th Name
+  each model as |artist|
+
+
 = outlet

@@ -1,0 +1,15 @@
+table.listing
+  thead
+    tr
+      td.name Name
+      td.controls
+        = link-to 'New' "#{name}.new"
+  tbody
+    each collection as |model|
+      tr
+        td.name
+          = model.name
+        td.controls
+          nav.navigation
+            = link-to 'Edit' "#{name}.edit"
+            a action=destroy on=click Delete
