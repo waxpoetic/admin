@@ -1,0 +1,14 @@
+h1 New Artist
+
+form action=create on=submit
+  fieldset
+    .field
+      = input name=name value=name placeholder='Artist Name'
+    .field
+      = input name=bio value=bio type='textarea'
+    .field
+      = input name=photo value=photo
+  footer
+    button type="submit" Create Artist
+
+= outlet

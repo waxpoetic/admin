@@ -7,16 +7,12 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource('articles');
-  this.resource('artists');
-  this.resource('releases');
-  this.resource('tracks');
-  this.resource('images');
-  this.resource('events');
   this.route('articles');
-  this.route('artists');
+  this.route('artists', function() {
+    this.route('new');
+  });
   this.route('releases');
-  this.route('tracks');
+  this.route('tracks', function() {});
   this.route('events');
   this.route('login');
 });
