@@ -13,6 +13,11 @@ Router.map(function() {
   this.resource('tracks');
   this.resource('images');
   this.resource('events');
+  this.route('articles');
+  this.route('artists');
+  this.route('releases');
+  this.route('tracks');
+  this.route('events');
 });
 
 export default Router;
